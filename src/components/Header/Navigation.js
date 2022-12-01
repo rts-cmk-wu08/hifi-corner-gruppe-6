@@ -1,7 +1,14 @@
 const Navigation = () => {
     return (
         <>
-        <p>Tekst</p>
+        <ul>
+            <img src="src" alt="" />
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <div></div>
+            
+        </ul>
         </>
     );
 }
