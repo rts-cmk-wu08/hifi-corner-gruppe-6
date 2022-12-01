@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom"
 import Product from './components/Product/Product'
 import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
+import HomePage from './templates/HomePage/HomeInfo'
 
 export default function App() {
 
@@ -13,8 +14,8 @@ export default function App() {
   return (
     <div className='app'>
       <Routes>
-        {/* <Route path='/' element={<Home />} />
-        <Route path='/homepage' element={<Home />} /> */}
+        {/* <Route path='/' element={<Home />} />*/}
+        <Route path='/homepage' element={<HomePage/>} /> 
         <Route path='/product' element={<Product />} />
         {/* <Route path='/productdetails' element={<Home />} />
         <Route path='/productcomparison' element={<Home />} />
