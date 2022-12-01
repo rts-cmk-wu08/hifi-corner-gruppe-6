@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom"
 import Product from './components/Product/Product'
+import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
 
 export default function App() {
 
@@ -25,8 +26,8 @@ export default function App() {
         <Route path='/profile' element={<Home />} />
         <Route path='/orders' element={<Home />} />
         <Route path='/contact' element={<Home />} />
-        <Route path='/about' element={<Home />} />
-        <Route path='/moreinfo' element={<Home />} /> */}
+        <Route path='/about' element={<Home />} /> */}
+        <Route path='/moreinfo' element={<MoreInfofaq />} />
       </Routes>
     </div>
   )
