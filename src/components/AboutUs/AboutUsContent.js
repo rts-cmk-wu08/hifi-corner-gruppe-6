@@ -5,7 +5,7 @@ const AboutUsContent = () => {
         <img src="" alt="" />
         <div className="AboutUsText">
           <h3>History</h3>
-          <h3>
+          <h3 className="orange">
             Established in the late 1960s, our family owned business is based in
             Edinburgh and Falkirk, but services customers across the UK.{" "}
           </h3>
@@ -31,7 +31,7 @@ const AboutUsContent = () => {
       <div className="AboutUsContainerBox">
         <div className="AboutUsText">
           <h3></h3>
-          <h3></h3>
+          <h3 className="orange"></h3>
           <p></p>
         </div>
         <img src="" alt="" />
@@ -41,7 +41,7 @@ const AboutUsContent = () => {
         <img src="" alt="" />
         <div className="AboutUsText">
           <h3></h3>
-          <h3></h3>
+          <h3 className="orange"></h3>
           <p></p>
         </div>
       </div>
@@ -49,7 +49,7 @@ const AboutUsContent = () => {
       <div className="AboutUsContainerBox">
         <div className="AboutUsText">
           <h3></h3>
-          <h3></h3>
+          <h3 className="orange"></h3>
           <p></p>
         </div>
         <img src="" alt="" />
