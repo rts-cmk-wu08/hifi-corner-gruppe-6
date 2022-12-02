@@ -1,12 +1,9 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom"
 import Product from './components/Product/Product'
+import Footer from "./templates/Footer";
 
 export default function App() {
-
-
-
-
 
   
   return (
@@ -26,7 +23,8 @@ export default function App() {
         <Route path='/orders' element={<Home />} />
         <Route path='/contact' element={<Home />} />
         <Route path='/about' element={<Home />} />
-        <Route path='/moreinfo' element={<Home />} /> */}
+        <Route path='/moreinfo' element={<Home />} /> 
+        <Route path='/' element={<Footer />}*/}
       </Routes>
     </div>
   )

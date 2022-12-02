@@ -1,0 +1,25 @@
+.upperFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.upperFooter * {
+    margin: 0.5em;
+}
+.lowerFooter {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.lowerFooterPay {
+    grid-column: span 2;
+}
+.footerSmallIcon {
+    height:24px;
+margin: 0 0.25em;
+}
+.footerBigIcon {
+    height:57px;
+    margin: 0 0.5em;
+}
+.lowerFooterAddress, .lowerFooterAuthor {
+    font-size: 8px;
+}
