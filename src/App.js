@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Product from "./components/Product/Product";
 import ContactPage from "./pages/ContactPage";
-import "../src/templates/App.css";
+import "../src/App.css";
 import AboutUs from "./pages/AboutUs";
 
 export default function App() {

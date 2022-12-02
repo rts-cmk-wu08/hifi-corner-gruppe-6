@@ -30,9 +30,27 @@ const AboutUsContent = () => {
 
       <div className="AboutUsContainerBox">
         <div className="AboutUsText">
-          <h3></h3>
-          <h3 className="orange"></h3>
-          <p></p>
+          <h3>Hear The Difference</h3>
+          <h3 className="orange">
+            Book a demonstration at our Edinburgh or Falkirk showrooms.{" "}
+          </h3>
+          <p>
+            Would you choose a quality car without a test drive? If you are
+            familiar with the brand and have great trust in it, you might.
+            However, our listening preferences are unique to the individual and
+            with many of our customers new to the world of high quality sound
+            and vision, we encourage everyone to come in to demonstrate the
+            products they are interested in. You’ll find a relaxing and
+            comfortable environment in both our Edinburgh and Falkirk premises
+            where you can decide for yourself if the kit is right for you. We
+            also offer home demonstrations on selected products.
+          </p>
+          <p>It's our aim to get the right product for you.</p>
+          <p>
+            Our experts are on hand to guide you through the differences between
+            speakers, amplifiers and sources and provide simple solutions that
+            suit your needs.
+          </p>
         </div>
         <img src="" alt="" />
       </div>
@@ -40,17 +58,59 @@ const AboutUsContent = () => {
       <div className="AboutUsContainerBox">
         <img src="" alt="" />
         <div className="AboutUsText">
-          <h3></h3>
-          <h3 className="orange"></h3>
-          <p></p>
+          <h3>Services</h3>
+          <h3 className="orange">
+            Our passion for the products we sell and, for our customers’
+            satisfaction simply means that we happily offer additional services
+            not found on the high-street.
+          </h3>
+          <p>
+            <span className="bold">Home Setup</span>- We want to ensure that the
+            equipment you’ve purchased from us is installed correctly and sounds
+            perfect; and we happily provide this service throughout the UK.
+          </p>
+          <p>
+            <span className="bold">Part Exchange</span>– To help you upgrade
+            your system, we offer our part-exchange program. We can offer a set
+            price, or sell your old kit on your behalf.
+            <p>
+              <span className="bold">Turntable Doctor</span>– Our turntable
+              experts have been trained by the manufacturers for initial setup,
+              long-term maintenance, and upgrading your high quality turntables.
+            </p>
+            <p>
+              <span className="bold"> Record Cleaning Service</span>– Have some
+              old records that need a bit of love? We offer Scotland’s very own
+              professional record cleaning service with our bespoke Pro-Ject
+              record cleaner.
+            </p>
+          </p>
         </div>
       </div>
 
       <div className="AboutUsContainerBox">
         <div className="AboutUsText">
-          <h3></h3>
-          <h3 className="orange"></h3>
-          <p></p>
+          <h3>Tailored For You</h3>
+          <h3 className="orange">
+            We look forward to customising a system to meet your needs.{" "}
+          </h3>
+          <p>
+            We don’t favour one manufacturer over another – the only thing we do
+            favour is making sure our customers get the right product that suits
+            their needs and listening preferences. We will ask many questions in
+            order to ensure that what you buy from us is tailored to you and you
+            alone.{" "}
+          </p>
+          <p>
+            If you are looking for a product not found in our demonstration
+            showrooms or our online site, don’t fret as we have access to
+            hundreds of brands.
+          </p>
+          <p>
+            One of our biggest pleasures of working in this industry is to see
+            the smile on our customers’ faces when they finally hear and see the
+            system of their dreams.{" "}
+          </p>
         </div>
         <img src="" alt="" />
       </div>
