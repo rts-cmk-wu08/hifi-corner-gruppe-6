@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom"
 import Product from './components/Product/Product'
+import Header from './templates/Header/Header'
 
 export default function App() {
 
@@ -12,6 +13,7 @@ export default function App() {
   return (
     <div className='app'>
       <Routes>
+      <Route path='/header' element={<Header />} />
         {/* <Route path='/' element={<Home />} />
         <Route path='/homepage' element={<Home />} /> */}
         <Route path='/product' element={<Product />} />
