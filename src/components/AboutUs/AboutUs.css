@@ -2,6 +2,42 @@
 
 .orange {
     color: #FF6900;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p,
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: #495464;
+    font-size: 48px;
+}
+
+.AboutUsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    padding-bottom: 90px;
+    gap: 3%;
+    background-color: #fff;
+    margin: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
 
 
+/* .AboutUsContainerBox {
+    height: 250px;
+    width: 500px;
+} */
+
+img {
+    width: auto;
 }

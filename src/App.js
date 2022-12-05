@@ -5,6 +5,7 @@ import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
 import HomePage from './templates/HomePage/HomeInfo'
 import Footer from "./templates/Footer/Footer";
 import AboutUs from './pages/AboutUs'
+import "./App.css"
 
 export default function App() {
 

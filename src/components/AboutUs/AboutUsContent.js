@@ -1,13 +1,18 @@
+import PicOne from "./images/1.png";
+import PicTwo from "./images/2.png";
+import PicThree from "./images/3.png";
+import PicFour from "./images/4.png";
+
 const AboutUsContent = () => {
   return (
     <div className="AboutUsContainer">
       <div className="AboutUsContainerBox">
-        <img src="" alt="" />
+        <img src={PicOne} alt="1" />
         <div className="AboutUsText">
           <h3>History</h3>
           <h3 className="orange">
             Established in the late 1960s, our family owned business is based in
-            Edinburgh and Falkirk, but services customers across the UK.{" "}
+            Edinburgh and Falkirk, but services customers across the UK.
           </h3>
           <p>
             Our Edinburgh branch has the longest history as an audio retailer in
@@ -15,7 +20,7 @@ const AboutUsContent = () => {
             Nicolson’s Gramophone Saloon dating back to 1926. In the 1950s WG
             Graham took over the shop and renamed it WG Graham’s Hi-Fi Corner.
             Upon his retirement, Graham Tiso bought the business and shortened
-            the name to Hi-Fi Corner.{" "}
+            the name to Hi-Fi Corner.
           </p>
           <p>
             Soon thereafter a young enthusiastic Colin MacKenzie (left), who was
@@ -23,7 +28,7 @@ const AboutUsContent = () => {
             the shop; with a knack for business and years of experience in the
             hi-fi industry, Colin would later become the owner of Hi-Fi Corner.
             Today, Struan MacKenzie carries on the legacy as the company’s
-            Managing Director.{" "}
+            Managing Director.
           </p>
         </div>
       </div>
@@ -32,7 +37,7 @@ const AboutUsContent = () => {
         <div className="AboutUsText">
           <h3>Hear The Difference</h3>
           <h3 className="orange">
-            Book a demonstration at our Edinburgh or Falkirk showrooms.{" "}
+            Book a demonstration at our Edinburgh or Falkirk showrooms.
           </h3>
           <p>
             Would you choose a quality car without a test drive? If you are
@@ -52,11 +57,11 @@ const AboutUsContent = () => {
             suit your needs.
           </p>
         </div>
-        <img src="" alt="" />
+        <img src={PicTwo} alt="2" />
       </div>
 
       <div className="AboutUsContainerBox">
-        <img src="" alt="" />
+        <img src={PicThree} alt="3" />
         <div className="AboutUsText">
           <h3>Services</h3>
           <h3 className="orange">
@@ -73,6 +78,7 @@ const AboutUsContent = () => {
             <span className="bold">Part Exchange</span>– To help you upgrade
             your system, we offer our part-exchange program. We can offer a set
             price, or sell your old kit on your behalf.
+            </p>
             <p>
               <span className="bold">Turntable Doctor</span>– Our turntable
               experts have been trained by the manufacturers for initial setup,
@@ -83,7 +89,7 @@ const AboutUsContent = () => {
               old records that need a bit of love? We offer Scotland’s very own
               professional record cleaning service with our bespoke Pro-Ject
               record cleaner.
-            </p>
+            
           </p>
         </div>
       </div>
@@ -92,14 +98,14 @@ const AboutUsContent = () => {
         <div className="AboutUsText">
           <h3>Tailored For You</h3>
           <h3 className="orange">
-            We look forward to customising a system to meet your needs.{" "}
+            We look forward to customising a system to meet your needs.
           </h3>
           <p>
             We don’t favour one manufacturer over another – the only thing we do
             favour is making sure our customers get the right product that suits
             their needs and listening preferences. We will ask many questions in
             order to ensure that what you buy from us is tailored to you and you
-            alone.{" "}
+            alone.
           </p>
           <p>
             If you are looking for a product not found in our demonstration
@@ -109,10 +115,10 @@ const AboutUsContent = () => {
           <p>
             One of our biggest pleasures of working in this industry is to see
             the smile on our customers’ faces when they finally hear and see the
-            system of their dreams.{" "}
+            system of their dreams.
           </p>
         </div>
-        <img src="" alt="" />
+        <img src={PicFour} alt="4" />
       </div>
     </div>
   );
