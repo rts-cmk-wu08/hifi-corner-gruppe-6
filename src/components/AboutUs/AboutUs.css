@@ -32,12 +32,10 @@ h2 {
 
 }
 
-
-/* .AboutUsContainerBox {
-    height: 250px;
-    width: 500px;
-} */
+.AboutUsContainerBox {
+    width: 700px;
+}
 
 img {
-    width: auto;
+    width: 700px;
 }
