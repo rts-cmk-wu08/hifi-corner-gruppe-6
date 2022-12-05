@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.moreintroheadline{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.moreinfotext{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.moreheadline{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+.moreinfopara{
+    width: 1033px;
+}
+
+.moreinfoh1{
+    font-family: 'Open Sans', sans-serif;
+    color: #495464;
+}
