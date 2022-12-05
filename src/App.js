@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import Product from './components/Product/Product'
 import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
 import HomePage from './templates/HomePage/HomeInfo'
-import Footer from "./templates/Footer";
+import Footer from "./templates/Footer/Footer";
 
 export default function App() {
 
@@ -26,7 +26,7 @@ export default function App() {
         <Route path='/contact' element={<Home />} />
         <Route path='/about' element={<Home />} /> */}
         <Route path='/moreinfo' element={<MoreInfofaq />} />
-        <Route path='/' element={<Footer />} />
+        <Route path='/footer' element={<Footer />} />
       </Routes>
     </div>
   );
