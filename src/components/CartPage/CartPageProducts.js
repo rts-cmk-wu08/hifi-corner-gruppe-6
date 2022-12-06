@@ -8,7 +8,7 @@ const CartPageProducts = () => {
                     <img src={ProductPic} alt="1" />
                 </div>
                 <div className="CartPage--productText">
-                    <p>ProductName</p>
+                    <p>Auralic Aries G2.1 Streamer</p>
                     <p>In stock</p>
                 </div>
                 <div className="CartPageCounter">
@@ -24,6 +24,7 @@ const CartPageProducts = () => {
 
             <div className="SubTotalSection">
                  <p>Sub total <span className="orange">Some price</span></p>
+                 
             <button className="paymentButton">Go to payment</button>
             </div>
            

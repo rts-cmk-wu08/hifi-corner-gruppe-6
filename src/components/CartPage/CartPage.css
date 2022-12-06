@@ -50,10 +50,10 @@ button {
     font-weight: bold;
 }
 
-/* .SubTotalSection {
-    display: flex;
+.SubTotalSection {
+    display: grid;
     justify-content: right;
-} */
+}
 
 .paymentButton {
     background-color: #FF6900;
