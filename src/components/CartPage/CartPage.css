@@ -26,3 +26,39 @@
 .CartPageHeader {
     text-align: left;
 }
+
+
+
+.CartPage--box {
+    display: flex;
+    gap: 10%;
+    background-color: #F4F4F2;
+    width: 1124px;
+    height: 169px;
+
+
+}
+
+.CartPageCounter {
+    display: flex;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+/* .SubTotalSection {
+    display: flex;
+    justify-content: right;
+} */
+
+.paymentButton {
+    background-color: #FF6900;
+    color: #F4F4F2;
+    width: 167px;
+    height: 38px;
+
+}
