@@ -4,3 +4,18 @@
 body {
     background-color: #D5D5D5;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
