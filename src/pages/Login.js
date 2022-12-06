@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useState, useEfect } from "react";
 import Footer from "../templates/Footer";
 const Login = () => {
   const userList = [
@@ -51,19 +52,29 @@ const Login = () => {
       id: "6",
     },
   ];
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
+  const [messageLine, updateMessage] = useState("");
   const bcrypt = require("bcryptjs");
-  const salt = bcrypt.genSaltSync(5);
+  let passwordOk = false;
   const onSubmit = async (data) => {
-    let passwordHashed = {};
     const user = userList.find((e) => e.email === data.email);
     if (user && data.password) {
-      const passwordOk = await bcrypt.compare(
-        data.password,
-        user.passwordHashed
-      );
+      passwordOk = await bcrypt.compare(data.password, user.passwordHashed);
       console.log(user, passwordOk);
     }
+    if (passwordOk) {
+      localStorage.setItem(
+        "HIFIuserName",
+        user.firstName + " " + user.lastName
+      );
+      localStorage.setItem("HIFIuserId", user.id);
+      updateMessage("Login succesfull");
+      reset();
+    } else if (!!!user) updateMessage("Please enter your correct email-adress");
+    else if (!user.password)
+      updateMessage("Please enter your correct password");
+    else updateMessage("");
+    console.log(messageLine);
   };
 
   return (
@@ -71,7 +82,7 @@ const Login = () => {
       <section className="loginPage">
         <h1>LOGIN</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="loginForm">
-          <h2>REGISTERED CUSTOMERS</h2>
+          <h3>REGISTERED CUSTOMERS</h3>
           <p>If you have an account, sign in with your email address.</p>
           <label htmlFor="email">Email</label>
           <input type="email" id="email" {...register("email")} />
@@ -80,6 +91,7 @@ const Login = () => {
           <label htmlFor="saveUser">Remember me</label>
           <input type="radio" id="saveUser" {...register("saveuser")} />
           <button type="submit">Sign in</button>
+          <p className="messageLine">{messageLine}</p>
         </form>
       </section>
       <Footer />
