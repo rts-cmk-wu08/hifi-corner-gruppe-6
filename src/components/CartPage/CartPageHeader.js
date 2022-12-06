@@ -1,6 +1,6 @@
 const CartPageHeader = () => {
     return ( 
-        <h2>Cart</h2>
+        <h2 className="CartPageHeader">Cart</h2>
      );
 }
  
