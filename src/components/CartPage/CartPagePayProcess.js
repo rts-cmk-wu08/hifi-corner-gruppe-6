@@ -1,16 +1,19 @@
 
   import { library } from '@fortawesome/fontawesome-svg-core'
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { FaShoppingCart } from '@fortawesome/free-solid-svg-icons'
+  import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import {faCreditCard} from  '@fortawesome/free-solid-svg-icons'
+import { faReceipt } from '@fortawesome/free-solid-svg-icons'
 
- library.add(fab, FaShoppingCart)
+
 
 const CartPagePayProcess = () => {
     return ( 
         <div className="CartPagePayProcess">
-            <FontAwesomeIcon icon={FaShoppingCart}/>
-            <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
-             <FontAwesomeIcon icon={["fal", "coffee"]} />
+            <FontAwesomeIcon icon={faShoppingCart}/>
+            <FontAwesomeIcon icon={faCreditCard}/>
+            <FontAwesomeIcon icon={faReceipt}/>
+            
         </div>
         
      );
