@@ -5,7 +5,11 @@
 
 
  const CartPage=()=> {
-     return (<div className="CartPage"> <CartPagePayProcess /> <CartPageHeader /> <CartPageProducts /> </div>);
+     return (<div className="CartPage"> <CartPagePayProcess />
+      <CartPageHeader />
+       <CartPageProducts /> 
+        <CartPageProducts /> 
+       </div>);
  }
 
  export default CartPage;

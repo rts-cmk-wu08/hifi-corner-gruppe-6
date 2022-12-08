@@ -9,7 +9,7 @@ const CartPageProducts = () => {
                 </div>
                 <div className="CartPage--productText">
                     <p>Auralic Aries G2.1 Streamer</p>
-                    <p>In stock</p>
+                    <p><span class="dot"></span> In stock</p>
                 </div>
                 <div className="CartPageCounter">
             <button>-</button>
@@ -23,7 +23,7 @@ const CartPageProducts = () => {
             </div>
 
             <div className="SubTotalSection">
-                 <p>Sub total <span className="orange">Some price</span></p>
+                 <p>Sub total <span className="orange"> £4,799.00 </span></p>
                  
             <button className="paymentButton">Go to payment</button>
             </div>
