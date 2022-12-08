@@ -5,14 +5,9 @@ import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
 import HomePage from './pages/HomePage'
 import Footer from "./templates/Footer";
 import ProductDetails from "./pages/ProductDetails"
-
-
-export const Api = React.createContext(null)
-
+import Login from './pages/Login'
 
 export default function App() {
-
-  const value = "http://localhost:4000/"
   
   return (
     <div className='app'>
