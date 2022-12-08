@@ -35,9 +35,8 @@
     background-color: #F4F4F2;
     width: 1124px;
     /* height: 169px; */
-    padding-top: 3.5em;
-    padding-bottom: 2em;
-    padding-left: 60px;
+    padding: 3.5em 0 2em 60px;
+
 }
 
 .dot {
@@ -75,8 +74,7 @@ button {
     width: 167px;
     height: 38px;
     cursor: pointer;
-    margin-right: 20px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 2em 20px 2em 0px;
+
 
 }
