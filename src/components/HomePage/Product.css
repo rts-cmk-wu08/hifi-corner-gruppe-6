@@ -1,0 +1,13 @@
+.product {
+    height: 340px;
+    width: 260px;
+
+    display: grid;
+    grid-template-rows: 40% auto auto auto;
+}
+
+.product__image {
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}

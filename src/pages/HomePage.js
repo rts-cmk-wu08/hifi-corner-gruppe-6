@@ -1,8 +1,17 @@
+import React from "react"
 import Homeinfo from "../templates/HomePage/HomeInfo";
+import Hero from "../components/HomePage/Hero";
+import PopularProducts from "../components/HomePage/PopularProducts";
+
 
 const Homepage = () => {
-    return (   
-        <Homeinfo/>
+
+    return (
+        <>
+            <Hero />
+            <PopularProducts />
+            <Homeinfo/>
+        </>
      );
 }
  
