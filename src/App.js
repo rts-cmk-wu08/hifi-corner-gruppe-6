@@ -9,7 +9,7 @@ import ProductDetails from "./pages/ProductDetails";
 
 export default function App() {
   return (
-    <div className="app">
+    <div className="App">
       <Routes>
         {/* <Route path='/' element={<Home />} />*/}
         <Route path="/homepage" element={<HomePage />} />
@@ -22,6 +22,10 @@ export default function App() {
         <Route path='/login' element={<Home />} />
         <Route path='/create' element={<Home />} />
         <Route path='/profile' element={<Home />} />
+        <Route path='/orders' element={<Home />} /> */}
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutUs />} />
+        {/* <Route path='/moreinfo' element={<Home />} /> */}
         <Route path='/orders' element={<Home />} />
         <Route path='/contact' element={<Home />} />
         <Route path='/about' element={<Home />} /> */}
