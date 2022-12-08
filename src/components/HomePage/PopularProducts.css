@@ -1,5 +1,28 @@
 .popularProducts__items {
     display: grid;
     grid-auto-flow: column;
+    place-content: center;
+    column-gap: 5rem;
+}
 
+.popularProducts__top {
+    display: grid;
+    grid-auto-flow: column;
+}
+.top__heading {
+    color: #495464;
+    font-size: 24px;
+}
+.top__button {
+    display: grid;
+    place-items: center;
+    justify-items: end;
+}
+.top__button>button {
+    width: 170px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #FF6900;
+    box-shadow: 3px 3px 5px gray;
 }

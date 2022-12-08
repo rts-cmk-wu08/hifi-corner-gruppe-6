@@ -4,6 +4,7 @@ import Product from './components/Product/Product'
 import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
 import HomePage from './pages/HomePage'
 import Footer from "./templates/Footer";
+import ProductDetails from "./pages/ProductDetails"
 
 
 export const Api = React.createContext(null)
@@ -20,8 +21,8 @@ export default function App() {
           {/* <Route path='/' element={<Home />} />*/}
           <Route path='/' element={<HomePage/>} /> 
           <Route path='/product' element={<Product />} />
-          {/* <Route path='/productdetails' element={<Home />} />
-          <Route path='/productcomparison' element={<Home />} />
+          <Route path='/productdetails:id' element={<ProductDetails />} />
+          {/* <Route path='/productcomparison' element={<Home />} />
           <Route path='/cart' element={<Home />} />
           <Route path='/payment' element={<Home />} />
           <Route path='/invoice' element={<Home />} />

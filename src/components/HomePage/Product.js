@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Product.css"
+import { Link } from 'react-router-dom'
 
 export default function Product({ info }) {
     
     console.log(info)
 
     return (
-        <div className='product'>
+        <Link to={`/productdetails:${info.id}`} className='product'>
             <div className="product__image">
                 <img src={info.image.url} alt="" />
             </div>
@@ -17,10 +18,8 @@ export default function Product({ info }) {
                 <p>{`£ ${info.price}`}</p>
             </div>
             <div className="product__btn">
-                <div className="btn__button">
-                    <p>Read more</p>
-                </div>
+                <button className='btn__button'>Read more</button>
             </div>
-        </div>
+        </Link>
     )
 }
