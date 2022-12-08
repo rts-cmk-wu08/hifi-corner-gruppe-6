@@ -1,0 +1,26 @@
+.productDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+background-color: #D5D5D5;
+}
+.productDetailsHeader {
+grid-column: span 2;
+
+}
+.productDetailsImage {
+    background-color: #FFFFFF;
+    padding: 0.5em;
+}
+.productDetailsSpecs {
+    grid-column: span 2;
+    background-color: #FFFFFF;
+    padding: 0.5em;
+}
+.productDetailsText {
+    background-color: #FFFFFF;
+    padding: 0.5em;
+}
+.productDetailsCompare {
+    grid-column: span 2;
+    padding: 0.5em;
+}
