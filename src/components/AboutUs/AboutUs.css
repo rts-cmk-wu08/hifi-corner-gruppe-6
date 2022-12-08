@@ -20,18 +20,6 @@ h2 {
     font-size: 48px;
 }
 
-/* .AboutUsContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 30px;
-    padding-bottom: 90px;
-    gap: 5%;
-    background-color: #fff;
-    margin: 40px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    text-align: center;
-
-} */
 
 .AboutUsContainer {
     background-color: #fff;
