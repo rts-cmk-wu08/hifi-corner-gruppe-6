@@ -15,11 +15,12 @@
 
 
 h2 {
+    margin-top: 1em;
     color: #495464;
     font-size: 48px;
 }
 
-.AboutUsContainer {
+/* .AboutUsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
@@ -30,12 +31,32 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     text-align: center;
 
-}
-
-/* .AboutUsContainer {
-    display: flex;
 } */
 
-img {
-    width: 850px;
+.AboutUsContainer {
+    background-color: #fff;
+    height: 1450px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+
+
+}
+
+.AboutUsContainerBox {
+    display: flex;
+    float: left;
+    gap: 5%;
+    margin-top: 1.5em;
+
+}
+
+.AboutUsText {
+    width: 550px;
+}
+
+.AboutUsContainerBox img {
+    width: 550px;
 }
