@@ -1,3 +1,5 @@
+/* Cartpage payment process */
+
 .CartPagePayProcess {
     display: flex;
     font-size: 2em;
@@ -23,11 +25,13 @@
     left: 32%;
 }
 
+/* Header */
+
 .CartPageHeader {
     text-align: left;
 }
 
-
+/* Product box */
 
 .CartPage--box {
     display: flex;
@@ -36,7 +40,10 @@
     width: 1124px;
     /* height: 169px; */
     padding: 3.5em 0 2em 60px;
+}
 
+.CartPage--productText p {
+    text-align: left;
 }
 
 .dot {
