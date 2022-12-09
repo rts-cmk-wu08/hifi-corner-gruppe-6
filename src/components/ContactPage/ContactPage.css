@@ -25,7 +25,9 @@ button {
     margin-top: 2em;
     border: none;
     margin-left: auto;
-
+    height: 45px;
+    width: 135px;
+    font-size: 18px;
 }
 
 .red {
@@ -53,3 +55,76 @@ textarea {
 .orange {
     color: #FF6900;
 }
+
+
+
+/* NEW STYLES */
+.input__fullNameBox {
+    display: grid;
+    row-gap: 0.5rem;
+}
+.input__fullNameBox>label { font-size: 1.25rem; }
+.input__fullNameBox>input {
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+
+.input__emailBox {
+    display: grid;
+}
+.input__emailBox>label {
+    font-size: 1.25rem;
+}
+.input__emailBox>input {
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+
+.input__subjectBox {
+    display: grid;
+}
+.input__subjectBox>label {
+    font-size: 1.25rem;
+}
+.input__subjectBox>input {
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+
+.input__textBox {
+    display: grid;
+}
+.input__textBox>label {
+    font-size: 1.25rem;
+}
+.input__textBox>input {
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+
+
+/*=============================================
+=               FINAL MESSAGE                  =
+=============================================*/
+.finalMessage {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+.bg {
+    margin: 0.2rem 0.5rem;
+    padding: 0.3rem 0.6rem;
+    /* box-shadow: 3px 3px 5px black; */
+    border-radius: 0.5rem;
+}
+.bg>p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-top: 1px solid black;
+    border-bottom: solid 1px black;
+    padding: 0.5rem 0.2rem;
+}
+

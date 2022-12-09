@@ -5,6 +5,8 @@ import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
 import HomePage from './templates/HomePage/HomeInfo'
 import Footer from "./templates/Footer";
 import Login from './pages/Login'
+import ContactPage from './pages/ContactPage'
+import AboutUs from './pages/AboutUs'
 
 export default function App() {
 
@@ -12,8 +14,7 @@ export default function App() {
   return (
     <div className="App">
       <Routes>
-        {/* <Route path='/' element={<Home />} />*/}
-        <Route path='/homepage' element={<HomePage/>} /> 
+        <Route path='/' element={<HomePage/>} /> 
         <Route path='/product' element={<Product />} />
         {/* <Route path='/productdetails' element={<Home />} />
         <Route path='/productcomparison' element={<Home />} />
@@ -27,9 +28,9 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutUs />} />
         {/* <Route path='/moreinfo' element={<Home />} /> */}
-        <Route path='/orders' element={<Home />} />
+        {/* <Route path='/orders' element={<Home />} />
         <Route path='/contact' element={<Home />} />
-        <Route path='/about' element={<Home />} /> 
+        <Route path='/about' element={<Home />} />  */}
         <Route path='/moreinfo' element={<MoreInfofaq />} />
         <Route path='/login' element={<Login />} />
         <Route path='/footer' element={<Footer />} />
