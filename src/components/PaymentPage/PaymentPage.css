@@ -1,0 +1,38 @@
+.PaymentPageHeader {
+    text-align: left;
+}
+
+/* forms */
+.PaymentContainerBox {
+    background-color: #fff;
+
+}
+
+form {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.cityLabel {
+    width: 291px;
+}
+
+.postalCodeLabel {
+    width: 198px;
+}
+
+input {
+    width: 510px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.red {
+    color: #f00;
+}
+
+.PaymentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

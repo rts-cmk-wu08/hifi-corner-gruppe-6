@@ -5,7 +5,8 @@
 
 
  const CartPage=()=> {
-     return (<div className="CartPage"> <CartPagePayProcess />
+     return (<div className="CartPage"> 
+     <CartPagePayProcess />
       <CartPageHeader />
        <CartPageProducts /> 
         <CartPageProducts /> 

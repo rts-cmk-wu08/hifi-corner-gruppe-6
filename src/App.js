@@ -6,6 +6,7 @@ import HomePage from './templates/HomePage/HomeInfo'
 import Footer from "./templates/Footer/Footer";
 import AboutUs from './pages/AboutUs'
 import CartPage from './pages/CartPage'
+import PaymentPage from './pages/PaymentPage'
 import "./App.css"
 
 export default function App() {
@@ -20,8 +21,8 @@ export default function App() {
         {/* <Route path='/productdetails' element={<Home />} />
         <Route path='/productcomparison' element={<Home />} /> */}
         <Route path='/cart' element={<CartPage />} />
-        {/*<Route path='/payment' element={<Home />} />
-        <Route path='/invoice' element={<Home />} />
+        <Route path='/payment' element={<PaymentPage />} />
+        {/*<Route path='/invoice' element={<Home />} />
         <Route path='/login' element={<Home />} />
         <Route path='/create' element={<Home />} />
         <Route path='/profile' element={<Home />} />
