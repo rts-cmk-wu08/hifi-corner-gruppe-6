@@ -1,9 +1,11 @@
-import React from 'react'
-import { Routes, Route } from "react-router-dom"
-import Product from './components/Product/Product'
-import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
-import HomePage from './templates/HomePage/HomeInfo'
-import Footer from "./templates/Footer/Footer";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Product from "./components/Product/Product";
+import MoreInfofaq from "./templates/MoreInfo/MoreInfoFaq";
+import HomePage from "./templates/HomePage/HomeInfo";
+import Footer from "./templates/Footer";
+// import Login from './pages/Login'
+import ContactPage from './pages/ContactPage'
 import AboutUs from './pages/AboutUs'
 import "./App.css"
 
@@ -26,7 +28,7 @@ export default function App() {
         <Route path='/contact' element={<ContagePage />} />*/}
         <Route path='/about' element={<AboutUs />} />
         <Route path='/moreinfo' element={<MoreInfofaq />} />
-        <Route path='/login' element={<Login />} />
+        {/* <Route path='/login' element={<Login />} /> */}
         <Route path='/footer' element={<Footer />} />
       </Routes>
     </div>
