@@ -4,7 +4,7 @@ import Product from "./components/Product/Product";
 import MoreInfofaq from "./templates/MoreInfo/MoreInfoFaq";
 import HomePage from "./templates/HomePage/HomeInfo";
 import Footer from "./templates/Footer";
-import Login from './pages/Login'
+// import Login from './pages/Login'
 import ContactPage from './pages/ContactPage'
 import AboutUs from './pages/AboutUs'
 import Login from "./pages/Login";
@@ -32,7 +32,7 @@ export default function App() {
         <Route path='/contact' element={<Home />} />
         <Route path='/about' element={<Home />} />  */}
         <Route path='/moreinfo' element={<MoreInfofaq />} />
-        <Route path='/login' element={<Login />} />
+        {/* <Route path='/login' element={<Login />} /> */}
         <Route path='/footer' element={<Footer />} />
       </Routes>
     </div>
