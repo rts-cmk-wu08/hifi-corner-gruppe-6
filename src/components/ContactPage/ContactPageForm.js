@@ -126,9 +126,6 @@ const ContactPageForm = () => {
       </div> 
     )
   }
-
-
-
 };
 
 export default ContactPageForm;

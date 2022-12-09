@@ -28,6 +28,7 @@ button {
     height: 45px;
     width: 135px;
     font-size: 18px;
+
 }
 
 .red {
@@ -55,6 +56,7 @@ textarea {
 .orange {
     color: #FF6900;
 }
+
 
 
 
@@ -127,4 +129,3 @@ textarea {
     border-bottom: solid 1px black;
     padding: 0.5rem 0.2rem;
 }
-
