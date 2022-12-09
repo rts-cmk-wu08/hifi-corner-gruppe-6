@@ -1,14 +1,12 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Product from "./components/Product/Product";
-import MoreInfofaq from "./templates/MoreInfo/MoreInfoFaq";
-import HomePage from "./templates/HomePage/HomeInfo";
-import Footer from "./templates/Footer";
-import Login from './pages/Login'
-import ContactPage from './pages/ContactPage'
+import React from 'react'
+import { Routes, Route } from "react-router-dom"
+import Product from './components/Product/Product'
+import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
+import HomePage from './templates/HomePage/HomeInfo'
+import Footer from "./templates/Footer/Footer";
 import AboutUs from './pages/AboutUs'
-import Login from "./pages/Login";
-import ProductDetails from "./pages/ProductDetails";
+import "./App.css"
+
 
 export default function App() {
   return (
@@ -24,13 +22,9 @@ export default function App() {
         <Route path='/login' element={<Home />} />
         <Route path='/create' element={<Home />} />
         <Route path='/profile' element={<Home />} />
-        <Route path='/orders' element={<Home />} /> */}
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/about" element={<AboutUs />} />
-        {/* <Route path='/moreinfo' element={<Home />} /> */}
-        {/* <Route path='/orders' element={<Home />} />
-        <Route path='/contact' element={<Home />} />
-        <Route path='/about' element={<Home />} />  */}
+        <Route path='/orders' element={<Home />} /> 
+        <Route path='/contact' element={<ContagePage />} />*/}
+        <Route path='/about' element={<AboutUs />} />
         <Route path='/moreinfo' element={<MoreInfofaq />} />
         <Route path='/login' element={<Login />} />
         <Route path='/footer' element={<Footer />} />
