@@ -30,7 +30,10 @@ const CartPageProducts = () => {
             <div className="SubTotalSection">
                  <p>Sub total <span className="orange"> £4,799.00 </span></p>
                  
-            <button className="paymentButton">Go to payment</button>
+                  <Link to="/payment">
+                     <button className="paymentButton">Go to payment</button>
+                  </Link>
+           
             </div>
            
             
