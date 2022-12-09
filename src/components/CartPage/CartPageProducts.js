@@ -1,5 +1,7 @@
 
 import ProductPic from "./images/1.png";
+import Counter from "./Counter";
+
 const CartPageProducts = () => {
     return ( <div className="CartPageContainer">
         <div className="CartPageContainerBox">
@@ -11,11 +13,14 @@ const CartPageProducts = () => {
                     <p>Auralic Aries G2.1 Streamer</p>
                     <p><span class="dot"></span> In stock</p>
                 </div>
+
+
                 <div className="CartPageCounter">
-            <button>-</button>
-            <p>1</p>
-            <button>+</button>
+
+                    <Counter></Counter>
                 </div>
+
+
                 <div className="CartPagePrice">
                     <p>Price</p>
                 </div>
