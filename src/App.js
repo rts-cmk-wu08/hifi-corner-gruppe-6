@@ -4,10 +4,9 @@ import Product from "./components/Product/Product";
 import MoreInfofaq from "./templates/MoreInfo/MoreInfoFaq";
 import HomePage from "./templates/HomePage/HomeInfo";
 import Footer from "./templates/Footer";
-import Login from "./pages/Login";
 import ProductDetails from "./pages/ProductDetails";
-import ContactPage from "./pages/ContactPage"
-import AboutUs from "./pages/AboutUs"
+import ContactPage from "./pages/ContactPage";
+import AboutUs from "./pages/AboutUs";
 
 export default function App() {
   return (
@@ -30,7 +29,6 @@ export default function App() {
         {/* <Route path='/moreinfo' element={<Home />} /> */}
         {/* Route path="/orders" element={<Home />} /> */}
         <Route path="/moreinfo" element={<MoreInfofaq />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/productdetails" element={<ProductDetails />} />
         <Route path="/footer" element={<Footer />} />
       </Routes>
