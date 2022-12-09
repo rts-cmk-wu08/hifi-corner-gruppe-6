@@ -36,7 +36,7 @@ h2 {
 .AboutUsContainerBox {
     display: flex;
     float: left;
-    gap: 5%;
+    gap: 4%;
     margin-top: 1.5em;
 
 }
