@@ -7,14 +7,12 @@ import Footer from "./templates/Footer/Footer";
 import AboutUs from './pages/AboutUs'
 import "./App.css"
 
-export default function App() {
 
-  
+export default function App() {
   return (
     <div className="App">
       <Routes>
-        {/* <Route path='/' element={<Home />} />*/}
-        <Route path='/homepage' element={<HomePage/>} /> 
+        <Route path='/' element={<HomePage/>} /> 
         <Route path='/product' element={<Product />} />
         {/* <Route path='/productdetails' element={<Home />} />
         <Route path='/productcomparison' element={<Home />} />
@@ -28,6 +26,7 @@ export default function App() {
         <Route path='/contact' element={<ContagePage />} />*/}
         <Route path='/about' element={<AboutUs />} />
         <Route path='/moreinfo' element={<MoreInfofaq />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/footer' element={<Footer />} />
       </Routes>
     </div>
