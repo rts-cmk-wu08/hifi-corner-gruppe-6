@@ -1,16 +1,16 @@
-import React from 'react'
-import { Routes, Route } from "react-router-dom"
-import Product from './components/Product/Product'
-import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
-import HomePage from './templates/HomePage/HomeInfo'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Product from "./components/Product/Product";
+import MoreInfofaq from "./templates/MoreInfo/MoreInfoFaq";
+import HomePage from "./templates/HomePage/HomeInfo";
 import Footer from "./templates/Footer";
 import Login from './pages/Login'
 import ContactPage from './pages/ContactPage'
 import AboutUs from './pages/AboutUs'
+import Login from "./pages/Login";
+import ProductDetails from "./pages/ProductDetails";
 
 export default function App() {
-
-  
   return (
     <div className="App">
       <Routes>
