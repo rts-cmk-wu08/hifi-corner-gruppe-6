@@ -4,6 +4,7 @@ import Product from './components/Product/Product'
 import MoreInfofaq from './templates/MoreInfo/MoreInfoFaq'
 import HomePage from './templates/HomePage/HomeInfo'
 import Footer from "./templates/Footer";
+import ProductPage from "./templates/ProductPage/ProductList";
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
         {/* <Route path='/' element={<Home />} />*/}
         <Route path='/homepage' element={<HomePage/>} /> 
         <Route path='/product' element={<Product />} />
+        <Route path='/productlist' element={<ProductPage />} />
         {/* <Route path='/productdetails' element={<Home />} />
         <Route path='/productcomparison' element={<Home />} />
         <Route path='/cart' element={<Home />} />

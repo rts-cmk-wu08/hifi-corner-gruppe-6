@@ -1,0 +1,36 @@
+h3{
+    font-weight: 400;
+}
+.accordion {
+    width: 265px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5em;
+    margin-right: 1.5em;
+}
+.accordion-item {
+    background-color: #E8E8E8;
+    color: black;
+    margin: 1em 0;
+}
+.accordion-item-header {
+    padding: 0.5em 3em 0.5em 1em;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.accordion-item-body {
+    transition: max-height 0.2s ease-out;
+    padding-bottom: 14px;
+    padding-left: 14px;
+}
+.accordion-item-body-content {
+    line-height: 30px;
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.showHide{
+    display: none;
+}
