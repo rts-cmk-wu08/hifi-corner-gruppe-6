@@ -95,7 +95,7 @@ function PaymentPageForm(){
         value={values.address}
         
         />
-         <span className='red'>Please enter address</span>
+         {submitted && !values.address ? <span className='red'>Please enter address</span>: null}
       </label> <br/>
 
       <label>E-mail <span className='red'>*</span> <br/>
@@ -103,7 +103,7 @@ function PaymentPageForm(){
           onChange={handleEmailInputChange}
         value={values.email}
         />
-        <span className='red'>Please enter E-mail</span>
+        {submitted && !values.email ? <span className='red'>Please enter E-mail</span>: null}
       </label> <br/>
 
       <label>Phone nr. <span className='red'>*</span> <br/>
