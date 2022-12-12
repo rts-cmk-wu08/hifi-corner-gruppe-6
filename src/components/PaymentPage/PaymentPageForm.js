@@ -14,6 +14,7 @@ function PaymentPageForm(){
 
   const [submitted, setSubmitted] = useState(false) // telling if the form is submitted or not
   //if submitted is true, go to next page
+  const [valid, setValid] = useState(false)
 
 
   //updated values everytime changes is made in the form field
@@ -41,6 +42,9 @@ function PaymentPageForm(){
   //  this will stop the refresh
   const handleSubmit = (event) =>{
     event.preventDefault();
+    if(values.firstName && values.city && values.postalCode && values.email && values.phoneNumber){
+      setValid(true);
+    }
     setSubmitted(true);
   }
 
@@ -58,7 +62,7 @@ function PaymentPageForm(){
 
         <form onSubmit={handleSubmit}>
           {/* location to end when clicking in button */}
-          {submitted ?  window.location.href="./InvoicePage.js": null} 
+          {submitted && valid ?  window.location.href="./InvoicePage.js": null} 
       <label>Fullname <span className='red'>*</span> <br/>
       
         <input
@@ -72,22 +76,25 @@ function PaymentPageForm(){
     
       </label><br/>
 
-      <label>City <span className='red'>*</span><br/>
-        <input className='cityLabel'
+      <div className='alignCityAndPostCode'>
+<label>City <span className='red'>*</span>
+        <input className='cityInput'
           onChange={handleCityInputChange}
         value={values.city}
         />
-        <span className='red'>Please enter City</span>
+        {submitted && !values.city ? <span className='red'>Please enter City</span>: null}
         
       </label>
 
-        <label>Postal code <span className='red'>*</span> 
-        <input className='postalCodeLabel'
+        <label className='postalCodeLabel'>Postal code <span className='red'>*</span> 
+        <input className='postalCodeInput'
           onChange={handlePostalCodeInputChange}
         value={values.postalCode}
         />
        {submitted && !values.postalCode ? <span className='red'>Please enter Postal Code</span>: null} 
       </label> <br/>
+      </div>
+      
 
       <label>Address <span className='red'>*</span> <br/>
         <input
@@ -111,19 +118,27 @@ function PaymentPageForm(){
           onChange={handlePhoneNumberInputChange}
         value={values.phoneNumber}
         />
-        <span className='red'>Please enter Phone nr.</span>
+        {submitted && values.phoneNumber ? <span className='red'>Please enter Phone nr.</span>: null}
       </label> <br/>
 <button type='submit'>Checkout</button>
     </form>
 
+
+{/* Payment overview box */}
     </div>
     <div className='PaymentContainerBox'>
         <div className='PaymentOverview'>
             <h3>Payment Overview</h3>
 
         </div>
-        <p>Text</p>
-        <p>Text</p>
+        <ul>
+          <li>Auralic Aries G2.1 Streamer</li>
+          <li>Auralic Aries G2.1 Streamer</li>
+        </ul>
+        <ul>
+          <li>Pris 1</li>
+          <li>Pris 2</li>
+        </ul>
         {/* <button type='submit'>Checkout</button> */}
         
     </div>

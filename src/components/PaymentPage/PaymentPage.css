@@ -14,12 +14,13 @@ form {
     padding: 30px;
 }
 
-.cityLabel {
+.cityInput {
     width: 291px;
 }
 
-.postalCodeLabel {
-    width: 198px;
+.postalCodeInput {
+    width: 170px;
+    margin-left: 30px;
 }
 
 input {
@@ -35,4 +36,8 @@ input {
 .PaymentContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.alignCityAndPostCode {
+    display: flex;
 }
