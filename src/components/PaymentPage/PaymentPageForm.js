@@ -57,7 +57,8 @@ function PaymentPageForm(){
     <div className='PaymentContainerBox'>
 
         <form onSubmit={handleSubmit}>
-          {submitted ? /*add code to get on the next page (invoice page)*/ window.location.href="./InvoicePage.js": null} 
+          {/* location to end when clicking in button */}
+          {submitted ?  window.location.href="./InvoicePage.js": null} 
       <label>Fullname <span className='red'>*</span> <br/>
       
         <input
@@ -66,7 +67,7 @@ function PaymentPageForm(){
         value={values.fullName}
         
           />
-          <span>Please enter Full name</span>
+          {submitted && !values.fullName ?<span className='red'>Please enter Full name</span>: null }
          
     
       </label><br/>
@@ -76,7 +77,7 @@ function PaymentPageForm(){
           onChange={handleCityInputChange}
         value={values.city}
         />
-        <span>Please enter City</span>
+        <span className='red'>Please enter City</span>
         
       </label>
 
@@ -85,7 +86,7 @@ function PaymentPageForm(){
           onChange={handlePostalCodeInputChange}
         value={values.postalCode}
         />
-        <span>Please enter Postal Code</span>
+       {submitted && !values.postalCode ? <span className='red'>Please enter Postal Code</span>: null} 
       </label> <br/>
 
       <label>Address <span className='red'>*</span> <br/>
@@ -94,6 +95,7 @@ function PaymentPageForm(){
         value={values.address}
         
         />
+         <span className='red'>Please enter address</span>
       </label> <br/>
 
       <label>E-mail <span className='red'>*</span> <br/>
@@ -101,7 +103,7 @@ function PaymentPageForm(){
           onChange={handleEmailInputChange}
         value={values.email}
         />
-        <span>Please enter E-mail</span>
+        <span className='red'>Please enter E-mail</span>
       </label> <br/>
 
       <label>Phone nr. <span className='red'>*</span> <br/>
@@ -109,7 +111,7 @@ function PaymentPageForm(){
           onChange={handlePhoneNumberInputChange}
         value={values.phoneNumber}
         />
-        <span>Please enter Phone nr.</span>
+        <span className='red'>Please enter Phone nr.</span>
       </label> <br/>
 <button type='submit'>Checkout</button>
     </form>
