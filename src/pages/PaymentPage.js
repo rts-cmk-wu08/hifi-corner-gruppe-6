@@ -1,5 +1,6 @@
  import CartPagePayProcess from "../components/CartPage/CartPagePayProcess";
  import PaymentPageForm from "../components/PaymentPage/PaymentPageForm";
+ import PaymentPageOverview from "../components/PaymentPage/PaymentPageOverview";
   import "../components/PaymentPage/PaymentPage.css";
 
 const PaymentPage = () => {
@@ -8,6 +9,7 @@ const PaymentPage = () => {
         <div className="PaymentPage">
             <CartPagePayProcess />
             <PaymentPageForm />
+            <PaymentPageOverview />
         </div>
         
 

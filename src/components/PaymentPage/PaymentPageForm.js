@@ -60,7 +60,7 @@ function PaymentPageForm(){
 <div className='PaymentContainer'>
     <div className='PaymentContainerBox'>
 
-        <form onSubmit={handleSubmit}>
+        <form id="form2" onSubmit={handleSubmit}>
           {/* location to end when clicking in button */}
           {submitted && valid ?  window.location.href="./InvoicePage.js": null} 
       <label>Fullname <span className='red'>*</span> <br/>
@@ -120,28 +120,13 @@ function PaymentPageForm(){
         />
         {submitted && values.phoneNumber ? <span className='red'>Please enter Phone nr.</span>: null}
       </label> <br/>
-<button type='submit'>Checkout</button>
+<button className="checkoutButton" type='submit' >Checkout</button>
     </form>
 
-
+</div>
 {/* Payment overview box */}
-    </div>
-    <div className='PaymentContainerBox'>
-        <div className='PaymentOverview'>
-            <h3>Payment Overview</h3>
-
-        </div>
-        <ul>
-          <li>Auralic Aries G2.1 Streamer</li>
-          <li>Auralic Aries G2.1 Streamer</li>
-        </ul>
-        <ul>
-          <li>Pris 1</li>
-          <li>Pris 2</li>
-        </ul>
-        {/* <button type='submit'>Checkout</button> */}
-        
-    </div>
+    
+    
     
 </div>
         

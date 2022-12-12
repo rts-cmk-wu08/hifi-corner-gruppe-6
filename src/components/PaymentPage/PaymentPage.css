@@ -18,9 +18,12 @@ form {
     width: 291px;
 }
 
+
+
 .postalCodeInput {
     width: 170px;
     margin-left: 30px;
+
 }
 
 input {
@@ -40,4 +43,25 @@ input {
 
 .alignCityAndPostCode {
     display: flex;
+}
+
+.checkoutButton {
+    background-color: #FF6900;
+    color: #F4F4F2;
+    width: 131px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px 0;
+
+}
+
+/* Payment overview */
+
+.PaymentOverview {
+    width: 400px;
+}
+
+li {}
+
+.AcceptTerms {
+    display: inline;
 }
