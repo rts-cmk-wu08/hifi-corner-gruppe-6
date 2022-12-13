@@ -1,6 +1,7 @@
 import { useQuery } from "react-query";
 import axios from "axios";
 import "./ProductDetails.css"
+import ProductSpecifications from "../components/ProductSpecifications"
 
 async function fetchDetails() {
   const { data } = await axios.get("http://localhost:4000/category");
@@ -37,7 +38,7 @@ const ProductDetails = (props) => {
 {product.description}
 </section>
 <section className="productDetailsSpecs">
-{product.specifications.power}
+<ProductSpecifications product={product}/>
 </section>
 <section className="productDetailsCompare">
 Nothing compares with {product.name}
