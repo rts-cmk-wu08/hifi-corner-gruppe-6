@@ -1,5 +1,6 @@
 import React,{useState}from 'react';
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
+import PaymentPageOverview from './PaymentPageOverview';
 
 function PaymentPageForm(){
   // setValues allow us to change values in the form
@@ -42,7 +43,7 @@ function PaymentPageForm(){
   //  this will stop the refresh
   const handleSubmit = (event) =>{
     event.preventDefault();
-    if(values.firstName && values.city && values.postalCode && values.email && values.phoneNumber){
+    if(values.fullName && values.city && values.postalCode && values.email && values.phoneNumber){
       setValid(true);
     }
     setSubmitted(true);
@@ -126,7 +127,7 @@ function PaymentPageForm(){
 </div>
 {/* Payment overview box */}
     
-    
+    <PaymentPageOverview />
     
 </div>
         

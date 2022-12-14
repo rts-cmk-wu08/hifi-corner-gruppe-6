@@ -2,9 +2,19 @@
     text-align: left;
 }
 
+.PaymentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+
+}
+
 /* forms */
 .PaymentContainerBox {
     background-color: #fff;
+
+
+
 
 }
 
@@ -46,6 +56,7 @@ input {
 }
 
 .checkoutButton {
+    margin-top: 6em;
     background-color: #FF6900;
     color: #F4F4F2;
     width: 131px;
@@ -56,12 +67,18 @@ input {
 
 /* Payment overview */
 
-.PaymentOverview {
-    width: 400px;
+.overview {
+    width: 500px;
+    gap: 5%;
+    padding: 0 40px;
 }
 
-li {}
+.TotalPrice {
+    text-align: right;
+}
 
 .AcceptTerms {
     display: inline;
+    text-align: left;
+
 }

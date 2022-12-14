@@ -9,7 +9,7 @@ const PaymentPage = () => {
         <div className="PaymentPage">
             <CartPagePayProcess />
             <PaymentPageForm />
-            <PaymentPageOverview />
+            
         </div>
         
 
