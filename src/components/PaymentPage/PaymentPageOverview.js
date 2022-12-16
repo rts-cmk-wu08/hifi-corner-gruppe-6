@@ -1,8 +1,18 @@
-import PaymentPageForm from "./PaymentPageForm";
-import { useState } from "react";
+// import PaymentPageForm from "./PaymentPageForm";
+// import { useState } from "react";
+// import { classAccessorProperty } from "@babel/types";
 
 const PaymentPageOverview = () => {
   
+    // const [checked] = useState(false)
+    /*const accept = document.querySelector("#accept-terms")
+    let errortxt =document.querySelector("#error_message");
+    if(!accept.checked){
+       
+      errortxt = "You must accept terms";
+      document.getElementById("error_message").innerHTML = "<p>" + errortxt + "</p>";
+    }
+    */
 
   
 
@@ -65,10 +75,11 @@ const PaymentPageOverview = () => {
           <input type="radio" id="subsribe" /><label htmlFor="radio-button">Subscribe to newsletter</label>
 
           
-          <input type="radio" id="accept-terms" name="accept" />
+          <input type="radio" id="accept-terms" name="accept" required/>
           
           <label htmlFor="radio-button">I accept the terms of trade (read in new window)</label>
           {/* skriv error message om accept terms ej är ibockad */}
+          <div id="error_message"></div>
        </div>
       
 

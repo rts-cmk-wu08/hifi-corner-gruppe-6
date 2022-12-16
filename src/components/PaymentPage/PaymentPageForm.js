@@ -1,8 +1,9 @@
 import React,{useState}from 'react';
-// import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import PaymentPageOverview from './PaymentPageOverview';
 
 function PaymentPageForm(){
+  const navigate = useNavigate();
   // setValues allow us to change values in the form
   const [values, setValues] = useState({ 
     fullName: "",
@@ -75,7 +76,8 @@ function PaymentPageForm(){
 
         <form id="form2" onSubmit={handleSubmit}>
           {/* location to end when clicking in button */}
-          {submitted && valid ?  window.location.href="./InvoicePage.js": null} 
+          {submitted && valid && navigate("/InvoicePage") } 
+          
       <label>Fullname <span className='red'>*</span> <br/>
       
         <input
