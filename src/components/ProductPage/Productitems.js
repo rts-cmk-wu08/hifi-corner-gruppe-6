@@ -5,7 +5,7 @@ import "../../components/ProductPage/Productitems.css"
 
 const Productitems = () => {
     const productlist = new useQuery(["productlist"], () => {
-        return axios("http://localhost:4000/category")
+        return axios("http://localhost:4000/products")
             .then( (res) =>{
                 return res.data
 
@@ -21,11 +21,12 @@ const Productitems = () => {
     }
     
     if(productlist.isSuccess){
+        console.log(productlist.data)
         return (
             
         <div className="container">
             
-            {productlist.data.cd_player.map((product, index) => {
+            {productlist.data.map((product, index) => {
                 return <Productitem key={index} data={product}/>
             })}
         </div>

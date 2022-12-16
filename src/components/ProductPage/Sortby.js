@@ -23,13 +23,13 @@ const Sortby = () => {
     return ( 
         
         <div className="accordion">
+
+            <h2>Sort By</h2>
             
             <div className="accordion-item">
                 <div onClick={showHideFn} className="accordion-item-header">
                     <h3>Brand</h3>
-                    <RiArrowDownSLine/>
-                    <RiArrowUpSLine/>
-                    
+                    <RiArrowDownSLine/>     
                 </div>
                 <div ref={brandShowHide} className="accordion-item-body showHide">
                     <div className="accordion-item-body-content">
@@ -50,7 +50,6 @@ const Sortby = () => {
                 <div onClick={showHideFn2} className="accordion-item-header">
                     <h3>Color</h3>
                     <RiArrowDownSLine/>
-                    <RiArrowUpSLine/>
                 </div>
                 <div ref={brandShowHide2} className="accordion-item-body showHide">
                     <div className="accordion-item-body-content">
