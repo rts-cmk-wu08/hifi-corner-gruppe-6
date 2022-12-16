@@ -131,7 +131,7 @@ function PaymentPageForm(){
           onChange={handlePhoneNumberInputChange}
         value={values.phoneNumber}
         />
-        {submitted && values.phoneNumber ? <span className='red'>Please enter Phone nr.</span>: null}
+        {submitted && !values.phoneNumber ? <span className='red'>Please enter Phone nr.</span>: null}
       </label> <br/>
 <button className="checkoutButton" type='submit' >Checkout</button>
     </form>

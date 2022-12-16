@@ -117,8 +117,18 @@ input[type="radio"] {
 }
 
 .btn-method {
-    border: solid 1px red;
+    border: solid 1px #495464;
+    margin: 1%;
     width: 130px;
     font-size: 14px;
-    ;
+    color: #495464;
+
+
+
+}
+
+.deliveryMethodContainer {
+    background-color: #D5D5D5;
+    width: 500px;
+    height: 600px;
 }

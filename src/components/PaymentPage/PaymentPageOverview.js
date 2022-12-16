@@ -1,6 +1,10 @@
 import PaymentPageForm from "./PaymentPageForm";
+import { useState } from "react";
 
 const PaymentPageOverview = () => {
+  
+
+  
 
 
     return ( 
@@ -61,9 +65,10 @@ const PaymentPageOverview = () => {
           <input type="radio" id="subsribe" /><label htmlFor="radio-button">Subscribe to newsletter</label>
 
           
-          <input type="radio" id="accept-terms" />
-          onChange={handleAcceptTermsChange}
+          <input type="radio" id="accept-terms" name="accept" />
+          
           <label htmlFor="radio-button">I accept the terms of trade (read in new window)</label>
+          {/* skriv error message om accept terms ej är ibockad */}
        </div>
       
 
