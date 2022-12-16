@@ -13,6 +13,10 @@ function PaymentPageForm(){
     phoneNumber: ""
   });
 
+  const subsribe = document.getElementById('subscribe');
+  const accept = document.getElementById('accept-terms');
+
+
   //if
 
   const [submitted, setSubmitted] = useState(false) // telling if the form is submitted or not
@@ -41,11 +45,15 @@ function PaymentPageForm(){
   }
    const handlePhoneNumberInputChange = (event) =>{
     setValues({...values, phoneNumber: event.target.value})
+
+    const handleAcceptTermsChange = (event) =>{
+      setValues({...values, accept: event.target})
+    }
   }
   //  this will stop the refresh
   const handleSubmit = (event) =>{
     event.preventDefault();
-    if(values.fullName && values.city && values.postalCode && values.email && values.phoneNumber && document.getElementById('subscribe').checked && document.getElementById('accept-terms').checked){
+    if(values.fullName && values.city && values.postalCode && values.email && values.phoneNumber && accept.checked){
       setValid(true);
     }
     setSubmitted(true);
@@ -54,8 +62,7 @@ function PaymentPageForm(){
   //radio button
 
 
-  // // location
-  // const location = useLocation();
+
 
   return(
 

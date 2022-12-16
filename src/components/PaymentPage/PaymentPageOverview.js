@@ -1,3 +1,5 @@
+import PaymentPageForm from "./PaymentPageForm";
+
 const PaymentPageOverview = () => {
 
 
@@ -57,7 +59,11 @@ const PaymentPageOverview = () => {
           <div className="AcceptTermsOptions">
           
           <input type="radio" id="subsribe" /><label htmlFor="radio-button">Subscribe to newsletter</label>
-          <input type="radio" id="accept-terms" /><label htmlFor="radio-button">I accept the terms of trade (read in new window)</label>
+
+          
+          <input type="radio" id="accept-terms" />
+          onChange={handleAcceptTermsChange}
+          <label htmlFor="radio-button">I accept the terms of trade (read in new window)</label>
        </div>
       
 
