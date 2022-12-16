@@ -13,6 +13,8 @@ function PaymentPageForm(){
     phoneNumber: ""
   });
 
+  //if
+
   const [submitted, setSubmitted] = useState(false) // telling if the form is submitted or not
   //if submitted is true, go to next page
   const [valid, setValid] = useState(false)
@@ -43,11 +45,14 @@ function PaymentPageForm(){
   //  this will stop the refresh
   const handleSubmit = (event) =>{
     event.preventDefault();
-    if(values.fullName && values.city && values.postalCode && values.email && values.phoneNumber){
+    if(values.fullName && values.city && values.postalCode && values.email && values.phoneNumber && document.getElementById('subscribe').checked && document.getElementById('accept-terms').checked){
       setValid(true);
     }
     setSubmitted(true);
   }
+
+  //radio button
+
 
   // // location
   // const location = useLocation();
