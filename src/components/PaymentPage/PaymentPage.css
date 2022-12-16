@@ -22,6 +22,7 @@ form {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     padding: 30px;
+    z-index: 10;
 }
 
 .cityInput {
@@ -68,9 +69,19 @@ input {
 /* Payment overview */
 
 .overview {
+    display: grid;
+    grid-column: 100px 300px;
     width: 500px;
+    height: 350px;
     gap: 5%;
-    padding: 0 40px;
+    padding: 20px 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.border-line {
+    border-top: solid 1px #D2D2D2;
+    width: 500px;
+    ;
 }
 
 .TotalPrice {
@@ -79,6 +90,35 @@ input {
 
 .AcceptTerms {
     display: inline;
-    text-align: left;
 
+
+}
+
+
+
+.AcceptTermsOptions {
+    padding-top: 50px;
+    /* margin-left: -100px; */
+    text-align: left;
+    background-color: #D5D5D5;
+
+}
+
+input[type="radio"] {
+    margin-right: -230px;
+    z-index: 0;
+
+
+}
+
+/* Delivery method */
+.method-options {
+    display: flex;
+}
+
+.btn-method {
+    border: solid 1px red;
+    width: 130px;
+    font-size: 14px;
+    ;
 }

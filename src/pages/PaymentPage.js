@@ -2,6 +2,7 @@
  import PaymentPageForm from "../components/PaymentPage/PaymentPageForm";
  import PaymentPageOverview from "../components/PaymentPage/PaymentPageOverview";
   import "../components/PaymentPage/PaymentPage.css";
+  import PaymentPageDeliveryMethod from "../components/PaymentPage/PaymentPageDeliveryMethod";
 
 const PaymentPage = () => {
     return ( 
@@ -9,6 +10,8 @@ const PaymentPage = () => {
         <div className="PaymentPage">
             <CartPagePayProcess />
             <PaymentPageForm />
+
+            <PaymentPageDeliveryMethod />
             
         </div>
         
