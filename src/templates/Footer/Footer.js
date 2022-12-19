@@ -5,7 +5,7 @@ import { faSquareFacebook, faSquareInstagram, faSquareTwitter, faSquareYoutube, 
  
 const Footer = () => {
   return (
-    <footer>
+    <footer className="commonFoooter">
       <section className="upperFooter">
         <nav className="upperFooterLeft">
           <div>Home</div>
@@ -19,7 +19,7 @@ const Footer = () => {
           <div>Terms & Conditions</div>
         </nav>
         <nav className="upperFooterRight">
-        <h2>Contact</h2>
+        <div>Contact</div>
           <p>2 Joppa Rd, Edinburgh, EH15 2EU</p>
           <p > <FontAwesomeIcon icon={faPhone} className="footerSmallIcon"/>0131 556 7901</p>
           <p>44 Cow Wynd, Falkirk, Central Region, FK1 1PU</p>

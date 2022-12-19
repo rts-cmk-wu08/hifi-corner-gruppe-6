@@ -10,6 +10,7 @@ import { CartContext } from "../Contexts/CartContext"
 import { CompareContext } from "../Contexts/CompareContext";
 import CompareBox from "../components/Compare/CompareBox";
 
+
 const ProductDetails = () => {
 
   const { id } = useParams()

@@ -13,8 +13,6 @@ import CartProvider from "./Contexts/CartContext";
 import CompareProvider from "./Contexts/CompareContext"
 
 
-
-
 export default function App() {
   return (
     <CompareProvider>
