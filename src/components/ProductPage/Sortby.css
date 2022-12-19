@@ -38,3 +38,20 @@ h3{
     margin: 10px;
     font-size: 20px;
 }
+
+
+
+/* radio button */
+/* .checkmark:after {
+    content: "";
+    display: none;
+} */
+
+.circlebtn input, .checkmark {
+    background-color: green;
+}
+
+.circlebtn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

@@ -1,7 +1,6 @@
 import React,{useRef} from "react"
 import "../../components/ProductPage/Sortby.css"
 import { RiArrowDownSLine } from "react-icons/ri";
-import { RiArrowUpSLine } from "react-icons/ri";
 
 const Sortby = () => {
     const brandShowHide = useRef()
@@ -44,6 +43,22 @@ const Sortby = () => {
                         <label htmlFor="apple">Apple</label>
                         <input className="check" type="checkbox" id="apple" name="apple"/>
                     </div>
+
+                    <label className="circlebtn">Steelseries
+                        <input type="radio" name="radio"/>
+                        <span className="checkmark"></span>
+                    </label>
+
+                    <label className="circlebtn">Logitech
+                        <input type="radio" name="radio"/>
+                        <span className="checkmark"></span>
+                    </label>
+
+                    <label className="circlebtn">Apple
+                        <input type="radio" name="radio"/>
+                        <span className="checkmark"></span>
+                    </label>
+
                 </div>
             </div>
             <div className="accordion-item">
