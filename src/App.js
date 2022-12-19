@@ -11,6 +11,7 @@ import "./App.css"
 import ProductDetails from "./pages/ProductDetails";
 import CartProvider from "./Contexts/CartContext";
 import CompareProvider from "./Contexts/CompareContext"
+import Header from "./pages/HeaderPage";
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
       <CartProvider>
         <div className="App">
           <Routes>
+            <Route path='/header' element={<Header/>}/>
             <Route path='/' element={<HomePage/>} /> 
             <Route path='/product' element={<Product />} />
             <Route path='/productdetails/:id' element={<ProductDetails />} />
