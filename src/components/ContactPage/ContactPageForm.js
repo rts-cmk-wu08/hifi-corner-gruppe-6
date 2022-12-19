@@ -99,7 +99,7 @@ const ContactPageForm = () => {
           </div>
 
           <div className="contactForm__button">
-            <button form="myForm" type="submit">Submit</button>
+            <button className="form__button" form="myForm" type="submit">Submit</button>
           </div>
         </form>
       )
