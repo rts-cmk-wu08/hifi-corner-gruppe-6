@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Mulish:wght@200;500&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+
+.AboutUs {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.orange {
+    color: #FF6900;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+h2 {
+    margin-top: 1em;
+    color: #495464;
+    font-size: 48px;
+}
+
+
+.AboutUsContainer {
+    background-color: #fff;
+    height: 1450px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+
+
+}
+
+.AboutUsContainerBox {
+    display: flex;
+    float: left;
+    gap: 5%;
+    margin-top: 1.5em;
+
+}
+
+.AboutUsText {
+    width: 550px;
+}
+
+.AboutUsContainerBox img {
+    width: 550px;
+}

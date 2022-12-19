@@ -1,0 +1,15 @@
+.specTable {
+    display: flex;
+    flex-direction: columns;
+}
+.specTable ul {
+    list-style-type: none;
+    padding:0;
+}
+.specTable ul li:nth-last-child(even) {
+    background-color: #E8E8E8;
+
+}
+.specTable ul li {
+    padding: 0 1em;
+}

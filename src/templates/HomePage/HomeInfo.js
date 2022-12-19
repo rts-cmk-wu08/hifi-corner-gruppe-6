@@ -1,11 +1,9 @@
-import Whatwedo from "../../components/Homepage/WhatWeDo.js";
-import Openinghour from "./pages/HomeInfo.js.js"
+import Infofooter from "../../components/HomePage/InfoFooter.js";
 
 const Homeinfo = () => {
     return ( 
         <div>
-            <Whatwedo/>
-            <Openinghour/>
+            <Infofooter/>
         </div>
      );
 }

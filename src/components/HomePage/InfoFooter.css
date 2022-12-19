@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.InfoFooterheadline{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.InfoFootertext{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.InfoFooterbox{
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    background-color: black;
+    color: white;
+    
+}
+.boxheadline{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.InfoFooterbox1{
+    margin-left: 3em;
+}
+
+.InfoFooterbox2{
+    margin-left: 10em;
+}
+.InfoFootertextr{
+    margin-top: 0;
+}
