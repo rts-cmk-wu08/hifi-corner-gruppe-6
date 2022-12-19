@@ -124,13 +124,28 @@ input[type="radio"] {
 
 }
 
-.deliveryMethodContainer {
-    background-color: #D5D5D5;
+.DeliveryMethodBox {
+
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 550px;
+
+
+}
+
+/* .deliveryMethodContainer {
+    margin-top: 3em;
     width: 500px;
     height: 600px;
-}
+} */
 
 .deliveryMethodContainer h2,
 .PaymentPageHeader {
     font-size: 26px;
+}
+
+.shipped p,
+.shipped h3 {
+    text-align: left;
 }

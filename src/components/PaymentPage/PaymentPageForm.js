@@ -1,6 +1,7 @@
 import React,{useState}from 'react';
 import { useNavigate } from "react-router-dom";
 import PaymentPageOverview from './PaymentPageOverview';
+import PaymentPageCardOptions from "./PaymentPageCardOptions"
 
 function PaymentPageForm(){
   const navigate = useNavigate();
@@ -141,7 +142,10 @@ function PaymentPageForm(){
 </div>
 {/* Payment overview box */}
     
-    <PaymentPageOverview />
+   
+    <PaymentPageCardOptions />
+    
+    
     
 </div>
         
