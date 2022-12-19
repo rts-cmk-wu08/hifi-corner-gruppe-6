@@ -5,21 +5,21 @@
 const PaymentPageOverview = () => {
   
     // const [checked] = useState(false)
-    /*const accept = document.querySelector("#accept-terms")
+    const accept = document.querySelector("#accept-terms")
     let errortxt =document.querySelector("#error_message");
     if(!accept.checked){
        
       errortxt = "You must accept terms";
       document.getElementById("error_message").innerHTML = "<p>" + errortxt + "</p>";
     }
-    */
+    
 
   
 
 
     return ( 
     
-   <div className="PaymentPageOverview">
+  //  <div className="PaymentPageOverview">
 
 
 <div className="PaymentContainer">
@@ -92,7 +92,7 @@ const PaymentPageOverview = () => {
     </div>
        
     
-</div> 
+// </div> 
     
     
     

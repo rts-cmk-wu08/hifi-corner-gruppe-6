@@ -12,10 +12,6 @@
 /* forms */
 .PaymentContainerBox {
     background-color: #fff;
-
-
-
-
 }
 
 form {
@@ -58,7 +54,7 @@ input {
 }
 
 .checkoutButton {
-    margin-top: 6em;
+    margin-top: 4em;
     background-color: #FF6900;
     color: #F4F4F2;
     width: 131px;
@@ -134,18 +130,24 @@ input[type="radio"] {
 
 }
 
-/* .deliveryMethodContainer {
-    margin-top: 3em;
-    width: 500px;
-    height: 600px;
-} */
 
 .deliveryMethodContainer h2,
 .PaymentPageHeader {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     font-size: 26px;
 }
 
 .shipped p,
 .shipped h3 {
     text-align: left;
+}
+
+/* card options */
+.cardOptions {
+    display: block;
+    background-color: red;
+    width: 500px;
+    padding: 30px;
+
 }

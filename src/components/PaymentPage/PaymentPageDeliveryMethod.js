@@ -1,3 +1,6 @@
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+   import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 const PaymentPageDeliveryMethod = () => {
     return ( <div className="deliveryMethodContainer">
 
@@ -21,10 +24,14 @@ const PaymentPageDeliveryMethod = () => {
             
         </div>
 
-
-
-                
-            
+        <div>
+        <h2>Choose payment method</h2>
+       <div className="cardOptions">
+        <input type="radio" value="Male" name="gender" className='radioInput' />  <FontAwesomeIcon icon={faShoppingCart}/>Pay with credit card <br/>
+        <input type="radio" value="Female" name="gender" /> <FontAwesomeIcon icon={faShoppingCart}/>Pay with Paypal <br/>
+        <input type="radio" value="Other" name="gender" /><FontAwesomeIcon icon={faShoppingCart}/> Pay with Apple pay
+      </div>
+      </div>
         </div>
     </div> );
 }
