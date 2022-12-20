@@ -1,0 +1,87 @@
+/* Cartpage payment process */
+
+.CartPagePayProcess {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+
+}
+
+.CartPagePayProcessBox {
+    background-color: #E8E8E8;
+    /* padding: 40px; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 2%;
+    width: 95px;
+    height: 95px;
+    position: relative;
+
+}
+
+.svg-inline--fa {
+    color: #495464;
+    position: absolute;
+    top: 32%;
+    left: 32%;
+}
+
+/* Header */
+
+.CartPageHeader {
+    text-align: left;
+}
+
+/* Product box */
+
+.CartPage--box {
+    display: flex;
+    gap: 10%;
+    background-color: #F4F4F2;
+    width: 1124px;
+    /* height: 169px; */
+    padding: 3.5em 0 2em 60px;
+}
+
+.CartPage--productText p {
+    text-align: left;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #008000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.CartPageCounter {
+    display: flex;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+.SubTotalSection {
+    display: grid;
+    justify-content: right;
+}
+
+.SubTotalSection {
+
+    margin-top: 1em;
+}
+
+.paymentButton {
+    background-color: #FF6900;
+    color: #F4F4F2;
+    width: 167px;
+    height: 38px;
+    cursor: pointer;
+    margin: 2em 20px 2em 0px;
+
+
+}
