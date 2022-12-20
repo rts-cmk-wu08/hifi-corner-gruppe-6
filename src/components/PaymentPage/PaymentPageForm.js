@@ -1,4 +1,4 @@
-import React,{useState}from 'react';
+import React,{useEffect, useState}from 'react';
 import { useNavigate } from "react-router-dom";
 import PaymentPageOverview from './PaymentPageOverview';
 import PaymentPageCardOptions from "./PaymentPageCardOptions"
@@ -58,11 +58,13 @@ function PaymentPageForm(){
     if(values.fullName && values.city && values.postalCode && values.email && values.phoneNumber && accept.checked){
       setValid(true);
     }
+
+    //saving form data in the browser storage
+     //storing input name
     localStorage.setItem("invoice", JSON.stringify(values)) //converte values to json
     setSubmitted(true);
   }
 
-  //radio button
 
 
 
@@ -82,7 +84,7 @@ function PaymentPageForm(){
           
       <label>Fullname <span className='red'>*</span> <br/>
       
-        <input
+        <input className='pageFormInput'
         onChange={handleFullNameInputChange}
         
         value={values.fullName}
@@ -114,7 +116,7 @@ function PaymentPageForm(){
       
 
       <label>Address <span className='red'>*</span> <br/>
-        <input
+        <input className='pageFormInput'
           onChange={handleAddressInputChange}
         value={values.address}
         
@@ -123,7 +125,7 @@ function PaymentPageForm(){
       </label> <br/>
 
       <label>E-mail <span className='red'>*</span> <br/>
-        <input
+        <input className='pageFormInput'
           onChange={handleEmailInputChange}
         value={values.email}
         />
@@ -131,7 +133,7 @@ function PaymentPageForm(){
       </label> <br/>
 
       <label>Phone nr. <span className='red'>*</span> <br/>
-        <input
+        <input className='pageFormInput'
           onChange={handlePhoneNumberInputChange}
         value={values.phoneNumber}
         />
@@ -198,7 +200,7 @@ function PaymentPageForm(){
 
           <div className="AcceptTermsOptions">
           
-          <input type="radio" id="subsribe" /><label htmlFor="radio-button">Subscribe to newsletter</label>
+          <input type="radio" id="subsribe" /><label htmlFor="radio-button">Subscribe to newsletter</label> <br />
 
           
           <input type="radio" id="accept-terms" name="accept" required/>
