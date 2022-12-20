@@ -19,7 +19,7 @@ export default function App() {
     <CompareProvider>
       <CartProvider>
         <div className="App">
-          <Routes>
+          <Routes >
             <Route path='/header' element={<Header/>}/>
             <Route path='/' element={<HomePage/>} /> 
             <Route path='/product' element={<Product />} />
@@ -37,7 +37,7 @@ export default function App() {
             <Route path='/moreinfo' element={<MoreInfofaq />} />
             {/* <Route path='/login' element={<Login />} /> */}
             <Route path='/footer' element={<Footer />} />
-          </Routes>
+          </Routes >
         </div>
       </CartProvider>
     </CompareProvider>
