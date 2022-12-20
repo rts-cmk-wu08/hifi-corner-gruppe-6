@@ -13,10 +13,10 @@ const Footer = () => {
           <div>About Us</div>
         </nav>
         <nav className="upperFooterMiddle">
-        <div>Returns & Refunds</div>
+        <div>Returns og Refunds</div>
           <div>Delivery</div>
           <div>Privacy Policy</div>
-          <div>Terms & Conditions</div>
+          <div>Terms og Conditions</div>
         </nav>
         <nav className="upperFooterRight">
         <div>Contact</div>
@@ -43,7 +43,7 @@ const Footer = () => {
           Hi Fi Corner (Edinburgh) Ltd is registered in Scotland. No: SC049298.
           Registered office: 2 Joppa Rd, Edinburgh EH15 2EU
         </p>
-        <p className="lowerFooterAuthor">Designed & Built by ????</p>
+        <p className="lowerFooterAuthor">Designed og Built by ????</p>
       </section>
     </footer>
   );

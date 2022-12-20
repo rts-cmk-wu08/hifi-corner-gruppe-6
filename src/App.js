@@ -1,3 +1,4 @@
+
 import React, { useState, createContext} from "react";
 import { Routes, Route } from "react-router-dom";
 import Product from "./components/Product/Product";
@@ -12,7 +13,6 @@ import ProductDetails from "./pages/ProductDetails";
 import CartProvider from "./Contexts/CartContext";
 import CompareProvider from "./Contexts/CompareContext"
 import Header from "./pages/HeaderPage";
-
 
 export default function App() {
   return (

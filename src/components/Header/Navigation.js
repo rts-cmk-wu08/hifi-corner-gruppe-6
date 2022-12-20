@@ -84,7 +84,6 @@ const Navigation = () => {
         console.log("loading")
         
     }
-
     return (
         <>
         <nav className="navbar">
