@@ -58,6 +58,7 @@ function PaymentPageForm(){
     if(values.fullName && values.city && values.postalCode && values.email && values.phoneNumber && accept.checked){
       setValid(true);
     }
+    localStorage.setItem("invoice", JSON.stringify(values)) //converte values to json
     setSubmitted(true);
   }
 
