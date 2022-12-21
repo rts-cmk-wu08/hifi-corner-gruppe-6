@@ -140,7 +140,11 @@ function PaymentPageForm(){
         {submitted && !values.phoneNumber ? <span className='red'>Please enter Phone nr.</span>: null}
       </label> <br/>
 <button className="checkoutButton" type='submit' >Checkout</button>
+
+
     </form>
+
+    
 
 </div>
 {/* Payment overview box */}
@@ -148,7 +152,7 @@ function PaymentPageForm(){
    
     {/* <PaymentPageCardOptions /> */}
     <div className="PaymentPageOverview">
-
+{/* <button className="checkoutButton" type='submit' >Checkout</button> */}
 
 <div className="PaymentContainer">
  <div className='PaymentContainerBox'>
@@ -206,10 +210,10 @@ function PaymentPageForm(){
           <input type="radio" id="accept-terms" name="accept" required/>
           
           <label htmlFor="radio-button">I accept the terms of trade (read in new window)</label>
-          {/* skriv error message om accept terms ej är ibockad */}
+          {/* skriv error message om accept terms ej är ibockad */} <br />
+        {submitted && !accept.checked ?<span className='red'>Please accept the terms</span>: null }
           <div id="error_message"></div>
        </div>
-      
 
             
         </div>

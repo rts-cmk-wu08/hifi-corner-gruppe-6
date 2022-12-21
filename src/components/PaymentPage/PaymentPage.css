@@ -103,6 +103,8 @@ form {
 /* Delivery method */
 .method-options {
     display: flex;
+    padding-left: 40px;
+
 }
 
 .btn-method {
@@ -135,15 +137,25 @@ form {
 }
 
 .shipped p,
-.shipped h3 {
+.shipped h3,
+.shipped,
+.payment {
     text-align: left;
+}
+
+.shipped {
+    padding: 40px;
 }
 
 /* card options */
 .cardOptions {
     display: block;
-    background-color: red;
+    background-color: #fff;
     width: 500px;
     padding: 30px;
 
+}
+
+.test {
+    background-color: red;
 }
