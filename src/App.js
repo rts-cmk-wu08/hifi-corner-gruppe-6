@@ -8,14 +8,23 @@ import Footer from "./templates/Footer/Footer";
 // import Login from './pages/Login'
 import ContactPage from './pages/ContactPage'
 import AboutUs from './pages/AboutUs'
+import CartPage from './pages/CartPage'
+import PaymentPage from './pages/PaymentPage'
+import InvoicePage from './pages/InvoicePage'
 import "./App.css"
+
+import Infofooter from './components/HomePage/InfoFooter'
+import Homeinfo from './templates/HomePage/HomeInfo'
+
 import ProductDetails from "./pages/ProductDetails";
 import CartProvider from "./Contexts/CartContext";
 import CompareProvider from "./Contexts/CompareContext"
 import Header from "./pages/HeaderPage";
 
+
 export default function App() {
   return (
+
     <CompareProvider>
       <CartProvider>
         <div className="App">
@@ -24,11 +33,11 @@ export default function App() {
             <Route path='/' element={<HomePage/>} /> 
             <Route path='/product' element={<Product />} />
             <Route path='/productdetails/:id' element={<ProductDetails />} />
-            {/*<Route path='/productcomparison' element={<Home />} />
-            <Route path='/cart' element={<Home />} />
-            <Route path='/payment' element={<Home />} />
-            <Route path='/invoice' element={<Home />} />
-            <Route path='/login' element={<Home />} />
+            {/*<Route path='/productcomparison' element={<Home />} />*/}
+            <Route path='/cart' element={<CartPage />} />
+            <Route path='/payment' element={<PaymentPage />} />
+            <Route path='/invoice' element={<InvoicePage />} />
+            {/*<Route path='/login' element={<Home />} />
             <Route path='/create' element={<Home />} />
             <Route path='/profile' element={<Home />} />
             <Route path='/orders' element={<Home />} /> 
@@ -41,5 +50,6 @@ export default function App() {
         </div>
       </CartProvider>
     </CompareProvider>
+
   );
 }
