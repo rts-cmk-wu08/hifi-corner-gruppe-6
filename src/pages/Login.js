@@ -1,7 +1,7 @@
 import "./Login.css";
 import { useForm } from "react-hook-form";
 import { useState, useEfect } from "react";
-import Footer from "../templates/Footer";
+import Footer from "../templates/Footer/Footer";
 import { useEffect } from "react";
 const Login = () => {
   const userList = [
