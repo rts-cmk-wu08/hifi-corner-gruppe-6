@@ -1,7 +1,7 @@
 import "./Login.css";
 import { useForm } from "react-hook-form";
 import { useState, useEfect } from "react";
-import Footer from "../templates/Footer";
+import Footer from "../templates/Footer/Footer";
 import { useEffect } from "react";
 const Login = () => {
   const userList = [
@@ -56,13 +56,13 @@ const Login = () => {
   ];
   const { register, handleSubmit, reset } = useForm();
   const [messageLine, updateMessage] = useState("");
-  const [userLine, updateUser] = useState("")
+  const [userLine, updateUser] = useState("");
   const bcrypt = require("bcryptjs");
   let passwordOk = false;
-  const userName = localStorage.getItem("HIFIuserName")
+  const userName = localStorage.getItem("HIFIuserName");
   useEffect(() => {
-    if (userName) updateUser("Logged in as "+userName)
-  },[])
+    if (userName) updateUser("Logged in as " + userName);
+  }, []);
 
   const onSubmit = async (data) => {
     const user = userList.find((e) => e.email === data.email);
@@ -71,14 +71,13 @@ const Login = () => {
       console.log(user, passwordOk);
     }
     if (passwordOk) {
-      const userName = user.firstName + " " + user.lastName
-      localStorage.setItem( "HIFIuserName", userName );
+      const userName = user.firstName + " " + user.lastName;
+      localStorage.setItem("HIFIuserName", userName);
       localStorage.setItem("HIFIuserId", user.id);
       updateMessage("Login succesfull");
       reset();
-      updateUser("Logged in as "+userName)
-    } 
-    else if (!!!user) updateMessage("Please enter your correct email-adress");
+      updateUser("Logged in as " + userName);
+    } else if (!!!user) updateMessage("Please enter your correct email-adress");
     else if (!user.password)
       updateMessage("Please enter your correct password");
     else updateMessage("");

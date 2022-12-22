@@ -2,9 +2,10 @@ import { useQuery } from "react-query";
 import axios from "axios";
 import "./ProductDetails.css"
 import ProductSpecifications from "../components/ProductSpecifications"
+import ProductImages from "../components/ProductImages"
 
 async function fetchDetails() {
-  const { data } = await axios.get("http://localhost:4000/category");
+  const { data } = await axios.get("http://localhost:4000/products");
   return data;
 }
 
@@ -17,8 +18,7 @@ const ProductDetails = (props) => {
   let productId = 11;
   if (props.id) productId = props.id;
   if (isSuccess) {
-    product = data.cd_player.find((product) => product.id === productId);
-    console.log(product);
+    product = data.find((product) => product.id === productId);
   }
   if (isError) {
     return <div>Error! {error.message}</div>;
@@ -32,7 +32,7 @@ const ProductDetails = (props) => {
 
 </header>
 <section className="productDetailsImage">
-{product.image.url}
+<ProductImages product={product}/>
 </section>
 <section className="productDetailsText">
 {product.description}
