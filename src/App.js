@@ -8,6 +8,7 @@ import ProductDetails from "./pages/ProductDetails";
 import ContactPage from "./pages/ContactPage";
 import AboutUs from "./pages/AboutUs";
 import "./App.css";
+import Login from ".pages/Login.js";
 
 export default function App() {
   return (
@@ -19,9 +20,9 @@ export default function App() {
         <Route path='/productcomparison' element={<Home />} />
         <Route path='/cart' element={<Home />} />
         <Route path='/payment' element={<Home />} />
-        <Route path='/invoice' element={<Home />} />
-        <Route path='/login' element={<Home />} />
-        <Route path='/create' element={<Home />} />
+        <Route path='/invoice' element={<Home />} />*/}
+        <Route path='/login' element={<Login />} />
+         {/*<Route path='/create' element={<Home />} />
         <Route path='/profile' element={<Home />} />
         <Route path='/orders' element={<Home />} /> */}
         <Route path='/contact' element={<ContactPage />} />
