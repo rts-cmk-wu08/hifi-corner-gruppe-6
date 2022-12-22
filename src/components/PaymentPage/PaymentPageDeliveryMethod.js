@@ -27,7 +27,7 @@ const PaymentPageDeliveryMethod = () => {
         <div>
         <h2 className='payment'>Choose payment method</h2>
        <div className="cardOptions">
-        <input type="radio" value="Male" name="gender" className='radioInput' />  <FontAwesomeIcon className="test" icon={faCcVisa}/><FontAwesomeIcon icon={faCcVisa}/>Pay with credit card <br/>
+        <input type="radio" value="Male" name="gender" className='radioInput' /> Pay with credit card <br/>
         <input type="radio" value="Female" name="gender" /> Pay with Paypal <br/>
         <input type="radio" value="Other" name="gender" /> Pay with Apple pay
       </div>
