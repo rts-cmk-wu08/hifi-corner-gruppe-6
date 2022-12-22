@@ -3,8 +3,6 @@ import AboutUsContent from "../components/AboutUs/AboutUsContent";
 import "../components/AboutUs/AboutUs.css"
 
 
-
-
 const AboutUs = () => {
   return (
     <div className="AboutUs">

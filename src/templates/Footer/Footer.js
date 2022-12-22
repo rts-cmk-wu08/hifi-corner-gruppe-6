@@ -5,7 +5,7 @@ import { faSquareFacebook, faSquareInstagram, faSquareTwitter, faSquareYoutube, 
  
 const Footer = () => {
   return (
-    <footer>
+    <footer className="commonFoooter">
       <section className="upperFooter">
         <nav className="upperFooterLeft">
           <div>Home</div>
@@ -13,13 +13,13 @@ const Footer = () => {
           <div>About Us</div>
         </nav>
         <nav className="upperFooterMiddle">
-        <div>Returns & Refunds</div>
+        <div>Returns og Refunds</div>
           <div>Delivery</div>
           <div>Privacy Policy</div>
-          <div>Terms & Conditions</div>
+          <div>Terms og Conditions</div>
         </nav>
         <nav className="upperFooterRight">
-        <h2>Contact</h2>
+        <div>Contact</div>
           <p>2 Joppa Rd, Edinburgh, EH15 2EU</p>
           <p > <FontAwesomeIcon icon={faPhone} className="footerSmallIcon"/>0131 556 7901</p>
           <p>44 Cow Wynd, Falkirk, Central Region, FK1 1PU</p>
@@ -43,7 +43,7 @@ const Footer = () => {
           Hi Fi Corner (Edinburgh) Ltd is registered in Scotland. No: SC049298.
           Registered office: 2 Joppa Rd, Edinburgh EH15 2EU
         </p>
-        <p className="lowerFooterAuthor">Designed & Built by ????</p>
+        <p className="lowerFooterAuthor">Designed og Built by ????</p>
       </section>
     </footer>
   );
