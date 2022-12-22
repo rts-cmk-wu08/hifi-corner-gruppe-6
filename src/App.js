@@ -9,7 +9,7 @@ import ProductDetails from "./pages/ProductDetails";
 import ContactPage from "./pages/ContactPage";
 import AboutUs from "./pages/AboutUs";
 import "./App.css";
-import Login from ".pages/Login.js";
+
 
 export default function App() {
   return (
