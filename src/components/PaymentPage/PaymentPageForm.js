@@ -1,7 +1,10 @@
-import React,{useState}from 'react';
-import { useLocation } from "react-router-dom";
+import React,{useEffect, useState}from 'react';
+import { useNavigate } from "react-router-dom";
+import PaymentPageOverview from './PaymentPageOverview';
+import PaymentPageCardOptions from "./PaymentPageCardOptions"
 
 function PaymentPageForm(){
+  const navigate = useNavigate();
   // setValues allow us to change values in the form
   const [values, setValues] = useState({ 
     fullName: "",
@@ -11,6 +14,12 @@ function PaymentPageForm(){
     email: "",
     phoneNumber: ""
   });
+
+  const subsribe = document.getElementById('subscribe');
+  const accept = document.getElementById('accept-terms');
+
+
+  //if
 
   const [submitted, setSubmitted] = useState(false) // telling if the form is submitted or not
   //if submitted is true, go to next page
@@ -38,18 +47,27 @@ function PaymentPageForm(){
   }
    const handlePhoneNumberInputChange = (event) =>{
     setValues({...values, phoneNumber: event.target.value})
+
+    const handleAcceptTermsChange = (event) =>{
+      setValues({...values, accept: event.target})
+    }
   }
   //  this will stop the refresh
   const handleSubmit = (event) =>{
     event.preventDefault();
-    if(values.firstName && values.city && values.postalCode && values.email && values.phoneNumber){
+    if(values.fullName && values.city && values.postalCode && values.email && values.phoneNumber && accept.checked){
       setValid(true);
     }
+
+    //saving form data in the browser storage
+     //storing input name
+    localStorage.setItem("invoice", JSON.stringify(values)) //converte values to json
     setSubmitted(true);
   }
 
-  // // location
-  // const location = useLocation();
+
+
+
 
   return(
 
@@ -62,10 +80,11 @@ function PaymentPageForm(){
 
         <form id="form2" onSubmit={handleSubmit}>
           {/* location to end when clicking in button */}
-          {submitted && valid ?  window.location.href="./InvoicePage.js": null} 
+          {submitted && valid && navigate("/InvoicePage") } 
+          
       <label>Fullname <span className='red'>*</span> <br/>
       
-        <input
+        <input className='pageFormInput'
         onChange={handleFullNameInputChange}
         
         value={values.fullName}
@@ -97,7 +116,7 @@ function PaymentPageForm(){
       
 
       <label>Address <span className='red'>*</span> <br/>
-        <input
+        <input className='pageFormInput'
           onChange={handleAddressInputChange}
         value={values.address}
         
@@ -106,7 +125,7 @@ function PaymentPageForm(){
       </label> <br/>
 
       <label>E-mail <span className='red'>*</span> <br/>
-        <input
+        <input className='pageFormInput'
           onChange={handleEmailInputChange}
         value={values.email}
         />
@@ -114,17 +133,98 @@ function PaymentPageForm(){
       </label> <br/>
 
       <label>Phone nr. <span className='red'>*</span> <br/>
-        <input
+        <input className='pageFormInput'
           onChange={handlePhoneNumberInputChange}
         value={values.phoneNumber}
         />
-        {submitted && values.phoneNumber ? <span className='red'>Please enter Phone nr.</span>: null}
+        {submitted && !values.phoneNumber ? <span className='red'>Please enter Phone nr.</span>: null}
       </label> <br/>
 <button className="checkoutButton" type='submit' >Checkout</button>
+
+
     </form>
+
+    
 
 </div>
 {/* Payment overview box */}
+    
+   
+    {/* <PaymentPageCardOptions /> */}
+    <div className="PaymentPageOverview">
+{/* <button className="checkoutButton" type='submit' >Checkout</button> */}
+
+<div className="PaymentContainer">
+ <div className='PaymentContainerBox'>
+        <div className='PaymentOverview overview'>
+            <h3>Payment Overview</h3>
+
+         
+        <table>
+       
+        <tr>
+          <td>Auralic Aries G2.1 Streamer</td>
+          <td>Pris 1</td>
+          
+        </tr>
+        <tr>
+          <td>Auralic Aries G2.1 Streamer</td>
+          <td>Pris 2</td>
+          
+        </tr>
+        <tr>
+          
+          <td className="TotalPrice">Price: £9.598.00</td>
+        </tr>
+      </table>
+
+      <span className="border-line"></span>
+
+       <table>
+        
+        <tr>
+          <td>Delivery price</td>
+          <td>Pris 1</td>
+          
+        </tr>
+        <tr>
+          <td>VAT</td>
+          <td>Pris 2</td>
+          
+        </tr>
+        <tr>
+          
+          <td className="TotalPrice">Price: 9.598.00</td>
+        </tr>
+      </table>
+
+        </div>
+        
+<div className="AcceptTerms">
+
+          <div className="AcceptTermsOptions">
+          
+          <input type="radio" id="subsribe" /><label htmlFor="radio-button">Subscribe to newsletter</label> <br />
+
+          
+          <input type="radio" id="accept-terms" name="accept" required/>
+          
+          <label htmlFor="radio-button">I accept the terms of trade (read in new window)</label>
+          {/* skriv error message om accept terms ej är ibockad */} <br />
+        {submitted && !accept.checked ?<span className='red'>Please accept the terms</span>: null }
+          <div id="error_message"></div>
+       </div>
+
+            
+        </div>
+       
+    </div>
+
+ 
+    </div>
+       
+    
+</div> 
     
     
     

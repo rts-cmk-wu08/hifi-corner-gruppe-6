@@ -10,11 +10,17 @@ import ContactPage from './pages/ContactPage'
 import AboutUs from './pages/AboutUs'
 import CartPage from './pages/CartPage'
 import PaymentPage from './pages/PaymentPage'
+import InvoicePage from './pages/InvoicePage'
 import "./App.css"
+
+import Infofooter from './components/HomePage/InfoFooter'
+import Homeinfo from './templates/HomePage/HomeInfo'
+
 import ProductDetails from "./pages/ProductDetails";
 import CartProvider from "./Contexts/CartContext";
 import CompareProvider from "./Contexts/CompareContext"
 import Header from "./pages/HeaderPage";
+
 
 export default function App() {
   return (
