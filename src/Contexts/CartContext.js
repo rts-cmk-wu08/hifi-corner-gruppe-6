@@ -22,14 +22,14 @@ export default function CartProvider({children}) {
         }
     ]);
 
-    useEffect(() => {
-        setTotalCount(CartItems.reduce((totalCount, item) => totalCount + item.count), 0)
-    }, [cartItems]);
+    // useEffect(() => {
+    //     setTotalCount(CartItems.reduce((totalCount, item) => totalCount + item.count), 0)
+    // }, [cartItems]);
 
-    const addToCart = (newItem) => {
-        setCartItems([...CartItems])
+    // const addToCart = (newItem) => {
+    //     setCartItems([...CartItems])
 
-    }
+    // }
 
 
 
