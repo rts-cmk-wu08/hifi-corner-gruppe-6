@@ -25,11 +25,11 @@ export default function App() {
         <Route path='/create' element={<Home />} />
         <Route path='/profile' element={<Home />} />
         <Route path='/orders' element={<Home />} /> */}
-        <Route path='/contact' element={<ContactPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/moreinfo" element={<MoreInfofaq />} />
         <Route path="/productdetails" element={<ProductDetails />} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login />} />
         <Route path="/footer" element={<Footer />} />
       </Routes>
     </div>

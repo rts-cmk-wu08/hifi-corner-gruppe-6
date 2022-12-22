@@ -1,22 +1,22 @@
 .loginPage {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
 .loginForm {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 2em;
-    background-color: #D5D5D5;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2em;
+  background-color: #d5d5d5;
 }
 .saveUser {
-    margin: 0.5em;
+  margin: 0.5em;
 }
 .messageLine {
-    color:crimson;
+  color: crimson;
 }
 .userLine {
-    color:darkblue;
+  color: darkblue;
 }
